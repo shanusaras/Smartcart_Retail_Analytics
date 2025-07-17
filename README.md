@@ -1,39 +1,66 @@
-# 🛍️ E-commerce Invoice Analytics Pipeline
+# 🛒 SmartCart: Purchase Pattern Analytics & Customer Segmentation Pipeline
 
- An end-to-end analytics project designed to solve real-world business problems in the e-commerce domain using invoice data.
-
-## Business Goal
-To enable e-commerce businesses to:
-- Segment customers based on behavior and value
-- Forecast demand for top-selling products
-- Monitor and optimize KPIs through automated dashboards
-
-## Tech Stack
-- **Python** – Data analysis, preprocessing, forecasting
-- **SQL** – ETL and data querying
-- **Power BI / Tableau** – Business Intelligence dashboards
-- **Docker** – Environment standardization (learning)
-- **Apache Airflow** – Pipeline automation (learning)
-- **Cloud (GCP/AWS)** – Cloud integration (planned)
-
-## Key Features
-- RFM-based customer segmentation
-- Demand forecasting using time series modeling
-- Fully automated data pipeline architecture (in progress)
-- Real-time dashboarding for sales insights
-- Clean EDA and KPI visualizations
-
-## My Contributions
-- Implemented core ML models and analytics logic
-- Built interactive dashboards with Power BI
-- Structuring the project for MLOps deployment
-- Exploring cloud orchestration and scalable automation tools
-
-## Status
-✅ Analytics & dashboards complete  
-🔄 MLOps layer (Airflow, Docker) under learning  
-☁️ Cloud integration planned
+**SmartCart** is a production-grade retail analytics pipeline designed to help businesses extract insights from invoice-level data. This project enables customer segmentation, purchase behavior analysis, and KPI tracking using automated ETL workflows, machine learning models, and dynamic BI dashboards.
 
 ---
 
-> 💬 **Note:** This is an independent, customized project focused on solving business-critical challenges in e-commerce analytics.
+## 📌 Business Problem
+
+Retail and e-commerce companies often struggle to:
+- Identify high-value vs. churn-prone customers
+- Forecast product demand with accuracy
+- Track real-time sales and operational KPIs across categories
+- Automate insights without manual intervention
+
+**SmartCart** addresses these challenges through a scalable analytics solution.
+
+---
+
+## 🎯 Project Objectives
+
+- Segment customers using behavioral metrics like RFM (Recency, Frequency, Monetary)
+- Forecast product demand and customer churn using predictive modeling
+- Visualize key business KPIs through interactive Power BI/Tableau dashboards
+- Automate data ingestion, transformation, and analytics workflows for scalability
+
+---
+
+## 🧰 Tech Stack
+
+| Layer            | Tools                            |
+|------------------|----------------------------------|
+| **Programming**  | Python, SQL                      |
+| **BI Dashboards**| Power BI, Tableau                |
+| **Data Modeling**| Scikit-learn, Statsmodels        |
+| **Automation**   | Airflow (in progress), Docker (learning) |
+| **Cloud Ready**  | GCP, AWS (planned)               |
+
+---
+
+## 📊 Key Features
+
+- ✅ Customer Segmentation using RFM scoring and clustering
+- ✅ Demand Forecasting using time series models
+- ✅ Real-time Dashboards for Sales & Customer KPIs
+- ✅ Automated ETL Pipelines for data ingestion and transformation
+- ✅ Clean modular architecture ready for MLOps integration
+
+---
+
+## 🧩 Folder Structure
+
+```text
+smartcart-retail-analytics/
+├── code/                  # Data transformation scripts
+├── notebooks/             # EDA, modeling, segmentation notebooks
+├── data/                  # Raw & cleaned invoice datasets
+├── docker/                # Docker configuration (in progress)
+├── docs/                  # Supporting documentation
+├── credentials/           # Placeholder for keys (not tracked)
+├── src/                   # Python modules for models, pipelines
+├── terraform/             # IaC for cloud infra (planned)
+├── tests/                 # Unit tests (in progress)
+├── web-scraping/          # Scraping scripts for dynamic data
+├── ecomm_bi.pptx          # Power BI dashboard file
+├── requirements.txt       # Python dependencies
+└── README.md              # You’re here.
