@@ -67,14 +67,15 @@ smartcart-retail-analytics/
 
 ```
 
-## My Contributions
-- Built analytics and ML layer to drive segmentation, forecasting, and KPI tracking
+---
 
-- Designed and deployed dashboards in Power BI for real-time stakeholder insights
+## Key Deliverables
 
-- Automated ETL processes in Python and SQL to minimize manual reporting time
+- Designed the complete analytics pipeline from raw invoice data to automated customer segmentation and KPI dashboards  
+- Developed predictive models and RFM-based segmentation logic for demand and retention optimization  
+- Automated ETL and reporting workflows using Python and SQL; deployed visual insights via Power BI  
+- Structured the codebase for future scaling with MLOps and cloud integration in mind
 
-- Structured the codebase for modular scaling via MLOps and cloud workflows
 
 ## Project Status
 - Invoice data analysis, segmentation, dashboarding – Complete
