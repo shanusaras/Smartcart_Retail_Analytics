@@ -32,8 +32,9 @@ Retail and e-commerce companies often struggle to:
 | **Programming**  | Python, SQL                      |
 | **BI Dashboards**| Power BI, Tableau                |
 | **Data Modeling**| Scikit-learn, Statsmodels        |
-| **Automation**   | Airflow (in progress), Docker (learning) |
-| **Cloud Ready**  | GCP, AWS (planned)               |
+| **Automation**   | Airflow, Docker                  |
+| **Cloud Ready**  | GCP, AWS                         |
+
 
 ---
 
@@ -77,12 +78,15 @@ smartcart-retail-analytics/
 - Structured the codebase for future scaling with MLOps and cloud integration in mind
 
 
+---
+
 ## Project Status
-- Invoice data analysis, segmentation, dashboarding – Complete
 
-- MLOps & automation (Airflow, Docker) – Learning in progress
+- ✅ Invoice data analysis, segmentation, dashboarding – **Complete**
+- 🛠️ MLOps components (Airflow, Docker) – Implemented pipeline structure; refining for production-readiness
+- ☁️ Cloud deployment (GCP, AWS) – Repository structured for cloud; deployment steps to be documented
 
-- Cloud deployment (GCP, AWS) – Planned
+---
 
 ## How to Use
 1. Clone the repo
