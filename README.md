@@ -4,7 +4,7 @@
 
 ---
 
-## 📌 Business Problem
+## Business Problem
 
 Retail and e-commerce companies often struggle to:
 - Identify high-value vs. churn-prone customers
@@ -16,7 +16,7 @@ Retail and e-commerce companies often struggle to:
 
 ---
 
-## 🎯 Project Objectives
+## Project Objectives
 
 - Segment customers using behavioral metrics like RFM (Recency, Frequency, Monetary)
 - Forecast product demand and customer churn using predictive modeling
@@ -25,7 +25,7 @@ Retail and e-commerce companies often struggle to:
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 | Layer            | Tools                            |
 |------------------|----------------------------------|
@@ -37,7 +37,7 @@ Retail and e-commerce companies often struggle to:
 
 ---
 
-## 📊 Key Features
+## Key Features
 
 - ✅ Customer Segmentation using RFM scoring and clustering
 - ✅ Demand Forecasting using time series models
@@ -47,7 +47,7 @@ Retail and e-commerce companies often struggle to:
 
 ---
 
-## 🧩 Folder Structure
+## Folder Structure
 
 ```text
 smartcart-retail-analytics/
