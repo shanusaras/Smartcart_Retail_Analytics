@@ -65,37 +65,34 @@ smartcart-retail-analytics/
 ├── requirements.txt       # Python dependencies
 └── README.md              # You’re here.
 
----
 ```
 
 ## My Contributions
-Built analytics and ML layer to drive segmentation, forecasting, and KPI tracking
+- Built analytics and ML layer to drive segmentation, forecasting, and KPI tracking
 
-Designed and deployed dashboards in Power BI for real-time stakeholder insights
+- Designed and deployed dashboards in Power BI for real-time stakeholder insights
 
-Automated ETL processes in Python and SQL to minimize manual reporting time
+- Automated ETL processes in Python and SQL to minimize manual reporting time
 
-Structured the codebase for modular scaling via MLOps and cloud workflows
+- Structured the codebase for modular scaling via MLOps and cloud workflows
 
 ## Project Status
-Invoice data analysis, segmentation, dashboarding – Complete
+- Invoice data analysis, segmentation, dashboarding – Complete
 
-MLOps & automation (Airflow, Docker) – Learning in progress
+- MLOps & automation (Airflow, Docker) – Learning in progress
 
-Cloud deployment (GCP, AWS) – Planned
+- Cloud deployment (GCP, AWS) – Planned
 
 ## How to Use
-Clone the repo
+1. Clone the repo
 
-Install dependencies:
-
-bash
-Copy
-Edit
+2. Install dependencies:
+```text
 pip install -r requirements.txt
-Explore EDA and modeling in the notebooks/ directory
+```
+3. Explore EDA and modeling in the notebooks/ directory
 
-Open ecomm_bi.pptx to view Power BI dashboard
+4. Open ecomm_bi.pptx to view Power BI dashboard
 
-Dashboard automation via Airflow → coming soon
+5. Dashboard automation via Airflow → coming soon
 
