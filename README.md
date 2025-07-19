@@ -23,6 +23,20 @@ Retail and e-commerce companies often struggle to:
 - Visualize key business KPIs through interactive Power BI/Tableau dashboards
 - Automate data ingestion, transformation, and analytics workflows for scalability
 
+## Data Source & Ethical Considerations
+
+This project uses anonymized e-commerce transaction data for educational and demonstration purposes. Key points to note:
+
+- **Data Anonymization**: All personally identifiable information has been removed
+- **Ethical Web Scraping**: Data collection follows ethical guidelines including:
+  - Respect for robots.txt rules
+  - Rate-limited requests
+  - No collection of personal or sensitive information
+- **Purpose**: Strictly for educational and portfolio demonstration
+- **Attribution**: Proper attribution given to data sources in compliance with terms of use
+
+For detailed scraping methodology and ethical considerations, see the [web-scraping/README.md](web-scraping/README.md)
+
 ---
 
 ## Tech Stack
