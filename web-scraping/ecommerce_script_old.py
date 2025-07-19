@@ -1,3 +1,7 @@
+
+# Deprecated , kept for reference
+
+
 from scrapy.crawler import CrawlerProcess
 
 from ecommerce_scraper.ecommerce_scraper.spiders.myspider import MySpider

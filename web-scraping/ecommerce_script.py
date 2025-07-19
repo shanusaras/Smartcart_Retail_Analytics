@@ -1,3 +1,7 @@
+# ecommerce_script.py
+
+# Primary script for scraping ecommerce website
+
 import requests
 import json
 from scrapy import Selector

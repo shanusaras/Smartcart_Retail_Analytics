@@ -1,3 +1,7 @@
+# Handles CAPTCHA/ slider verification
+
+# Status: Utility scripts, not actively used in main flow
+# Relevance: proof of concept for handling anti-scraping measures
 # slider.py
 
 import asyncio
