@@ -1,5 +1,5 @@
 # This file is never meant to be executed as a script.
-# Except, for being demonstration of how commands can be execute for this project.
+# Except, for being demonstration of how commands can be executed for this project.
 
 # Setting up Python Environment and Poetry
 export POETRY_HOME="/c/Users/<your-pc-user>/.poetry-env"
