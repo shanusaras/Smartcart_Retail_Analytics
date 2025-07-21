@@ -28,12 +28,30 @@ def clean_data_google(source_file, destination_file, project_id, bucket_name, cr
     df['Country'] = df['Country'].astype(str)
     df['total_spend'] = df['total_spend'].astype(float)
 
-    # Replace several descriptions with the most frequent description for each stock code
+    # Standardize StockCode to uppercase for consistency
     df['StockCode'] = df['StockCode'].str.upper()
+    
+    # Special case handling: Check for 'M' which often indicates manual adjustments
+    # These are typically non-product entries like adjustments, fees, or corrections
+    # Example: df.loc[df['StockCode'] == 'M']
+    
+    # Special case handling: Check for 'C' prefix in InvoiceNo which indicates credit notes/returns
+    # Example: df.loc[df['InvoiceNo'].str.startswith('C')]
+    # These represent returns or cancellations and may need special handling in analysis
+    
+    # For each StockCode, find the most common description to handle any inconsistencies
     most_freq = df.groupby('StockCode')['Description'].agg(lambda x: x.value_counts().idxmax()).reset_index()
+    
+    # Store original column order to maintain consistency
     columns_index = df.columns
+    
+    # Remove the original Description column to replace it with the standardized version
     df = df.drop(columns=['Description'])
+    
+    # Merge back the most frequent description for each StockCode
     df = pd.merge(df, most_freq, on='StockCode', how='left')
+    
+    # Ensure the column order matches the original structure
     df = df.reindex(columns=columns_index)
 
     # Write the cleaned data to a new parquet file
