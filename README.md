@@ -2,9 +2,19 @@
 
 **SmartCart** is a production-grade retail analytics pipeline designed to help businesses extract insights from invoice-level data. This project enables customer segmentation, purchase behavior analysis, and KPI tracking using automated ETL workflows, machine learning models, and dynamic BI dashboards.
 
----
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 
-## Business Problem
+## 📋 Table of Contents
+- [Business Problem](#business-problem)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Data Source & Ethics](#data-source--ethical-considerations)
+- [Tech Stack](#tech-stack)
+- [Contributing](#contributing)
+- [License](#license)
+
+## 🎯 Business Problem
 
 Retail and e-commerce companies often struggle to:
 - Identify high-value vs. churn-prone customers
@@ -14,16 +24,101 @@ Retail and e-commerce companies often struggle to:
 
 **SmartCart** addresses these challenges through a scalable analytics solution.
 
----
+## 📁 Project Structure
 
-## Project Objectives
+```
+Smartcart_Retail_Analytics/
+│
+├── notebooks/                     # Jupyter notebooks for analysis and development
+│   ├── ecomm_eda.ipynb           # Main exploratory data analysis notebook
+│   └── model_dev.ipynb           # Model development and evaluation notebook
+│
+├── src/                           # Source code for the project
+│   ├── dags/                     # Airflow DAGs for ETL workflows
+│   │   └── transform_load.py     # Data transformation and loading logic
+│   └── config/                   # Configuration files
+│
+├── terraform/                     # Infrastructure as Code (IaC) for GCP
+│   └── gcp/                      # GCP-specific configurations
+│       └── main.tf               # Main Terraform configuration
+│
+├── data/                          # Data storage (not versioned)
+│   └── ecomm_invoice_transaction.parquet  # Processed data file
+│
+├── lib/                           # External dependencies
+│   └── gcs-connector-3.0.7-shaded.jar  # Google Cloud Storage connector for Spark
+│
+├── sandbox/                       # Experimental code and tests
+│   └── pyspark_transformation_test.ipynb  # PySpark experimentation
+│
+├── tests/                         # Test files
+├── docs/                          # Project documentation
+├── web-scraping/                  # Web scraping utilities and scripts
+├── docker/                        # Docker container configurations
+└── credentials/                   # Store for credential files (in .gitignore)
+```
 
-- Segment customers using behavioral metrics like RFM (Recency, Frequency, Monetary)
-- Forecast product demand and customer churn using predictive modeling
-- Visualize key business KPIs through interactive Power BI/Tableau dashboards
-- Automate data ingestion, transformation, and analytics workflows for scalability
+### Key Files and Their Purposes
 
-## Data Source & Ethical Considerations
+#### Core Analysis Files
+- `notebooks/ecomm_eda.ipynb`: Main notebook for exploratory data analysis
+- `notebooks/model_dev.ipynb`: Notebook for model development and evaluation
+- `sandbox/pyspark_transformation_test.ipynb`: Experimental PySpark code and tests
+
+#### Data Pipeline
+- `src/dags/transform_load.py`: ETL pipeline for data transformation and loading
+- `src/config/`: Configuration files for the data pipeline
+
+#### Infrastructure
+- `terraform/gcp/main.tf`: GCP infrastructure configuration using Terraform
+- `docker/`: Docker container configurations for deployment
+
+#### Data
+- `data/ecomm_invoice_transaction.parquet`: Processed dataset used for analysis
+
+#### Dependencies
+- `requirements.txt`: Python package dependencies
+- `pyproject.toml`: Python project configuration (for Poetry)
+- `poetry.lock`: Lock file for Poetry dependency management
+
+#### Configuration
+- `.gitignore`: Specifies intentionally untracked files to ignore
+- `.pre-commit-config.yaml`: Pre-commit hooks configuration
+- `ruff.toml`: Configuration for the Ruff linter
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Python 3.8+
+- Jupyter Notebook
+- Required Python packages (see `requirements.txt`)
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/smartcart-retail-analytics.git
+   cd smartcart-retail-analytics
+   ```
+
+2. Create and activate a virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+### Running the Analysis
+1. Launch Jupyter Notebook:
+   ```bash
+   jupyter notebook analysis/notebooks/
+   ```
+2. Open `01_eda.ipynb` to start with exploratory data analysis
+
+## 🔍 Data Source & Ethical Considerations
 
 This project uses anonymized e-commerce transaction data for educational and demonstration purposes. Key points to note:
 
@@ -37,17 +132,25 @@ This project uses anonymized e-commerce transaction data for educational and dem
 
 For detailed scraping methodology and ethical considerations, see the [web-scraping/README.md](web-scraping/README.md)
 
----
-
-## Tech Stack
+## 🛠 Tech Stack
 
 | Layer            | Tools                            |
 |------------------|----------------------------------|
 | **Programming**  | Python, SQL                      |
+| **Data Processing** | Pandas, NumPy, PySpark         |
 | **BI Dashboards**| Power BI, Tableau                |
 | **Data Modeling**| Scikit-learn, Statsmodels        |
 | **Automation**   | Airflow, Docker                  |
-| **Cloud Ready**  | GCP, AWS                         |
+| **Cloud**        | GCP, AWS                         |
+| **Version Control** | Git, GitHub                    |
+
+## 🤝 Contributing
+
+Contributions are welcome! Please read our [contributing guidelines](CONTRIBUTING.md) before submitting pull requests.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 
 ---
